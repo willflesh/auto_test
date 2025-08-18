@@ -3,7 +3,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-with open('test_file.txt', 'w') as file:
+with open('../test_file.txt', 'w') as file:
     file.write('wassap')
 
 link = "http://suninjuly.github.io/file_input.html"
@@ -16,7 +16,7 @@ lastname = com.find_element(By.NAME, "lastname").send_keys("VLD")
 
 num1 = com.find_element(By.NAME, "email").send_keys("vldk")
 
-file_path = os.path.abspath('test_file.txt')
+file_path = os.path.abspath('../test_file.txt')
 file_input = com.find_element(By.ID, 'file')
 file_input.send_keys(file_path)
 
