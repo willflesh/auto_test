@@ -1,2 +1,2 @@
-def test_file():
+def test_hello():
   assert True
