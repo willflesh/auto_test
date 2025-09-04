@@ -1,2 +1,2 @@
 def test_hello():
-  assert True
+  assert "hello" == "hello"
