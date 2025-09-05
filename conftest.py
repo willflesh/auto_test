@@ -13,6 +13,7 @@ def pytest_addoption(parser):
 def browser():
     print("\nstart browser for test..")
     options = ChromeOptions()
+    options.add_argument("--no-sandox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
